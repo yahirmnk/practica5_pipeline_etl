@@ -1,0 +1,28 @@
+# --- Credenciales y secretos (NUNCA subir) ---
+# config.yaml contiene la contraseña de PostgreSQL
+config.yaml
+.aws/
+credentials
+.env
+.env.*
+*.pem
+*.key
+
+# --- Datos generados localmente y bitácoras ---
+data_lake/
+logs/
+
+# --- Entornos virtuales ---
+venv/
+.venv/
+env/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Editor / sistema ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

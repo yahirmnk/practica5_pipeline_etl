@@ -1,0 +1,22 @@
+# Copia este archivo como config.yaml y escribe tus datos reales.
+# config.yaml está en .gitignore: NUNCA se sube al repositorio.
+# Las credenciales de AWS NO van aquí: boto3 las lee de ~/.aws/credentials.
+postgres:
+  host: localhost
+  port: 5432
+  database: empresa         # se crea automáticamente si no existe
+  user: postgres
+  password: "TU_CONTRASEÑA_AQUI"
+
+aws:
+  region: us-east-1
+  bucket: "practica5-tunombre-2026"   # nombre único; se crea si no existe
+
+pipeline:
+  esquema_origen: operaciones
+  tabla_origen: clientes
+  esquema_destino: analitica
+  tabla_destino: clientes_features
+  prefijo_raw: raw/clientes
+  prefijo_processed: processed/clientes_features
+  prefijo_quarantine: quarantine/clientes
